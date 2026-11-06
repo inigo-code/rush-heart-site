@@ -3,11 +3,11 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Rush Heart · A video and audio downloader for public links.</title>
-  <meta name="description" content="Save public videos and audio to your own drive. Free for Windows.">
+  <title>Rush Heart · Save videos and audio to your own drive</title>
+  <meta name="description" content="Save videos and audio to your own drive. Free for Windows.">
   <meta name="theme-color" content="#0E0D10">
   <meta property="og:title" content="Rush Heart">
-  <meta property="og:description" content="Save public videos and audio to your own drive. A free Heart App for Windows.">
+  <meta property="og:description" content="Save videos and audio to your own drive. A free Heart App for Windows.">
   <meta property="og:image" content="https://inigo-code.github.io/rush-heart-site/assets/preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -16,7 +16,7 @@
   <link rel="apple-touch-icon" href="assets/icon-180.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="heart.css">
   <link rel="stylesheet" href="theme.css">
   <script>document.documentElement.classList.add('js')</script>
@@ -26,35 +26,90 @@
 
   <header class="bar wrap">
     <a class="brand" href="#top" aria-label="Rush Heart, back to top"><img src="assets/rush-heart.svg" width="40" height="40" alt="">Rush Heart</a>
-    <nav aria-label="Sections"><a href="#features">What it does</a><a href="#questions">Questions</a><a href="https://inigo-code.github.io/">Heart Apps</a></nav>
-    <a class="button button-small" href="#download">Download</a>
+    <nav aria-label="Sections"><a href="#features">Features</a><a href="#accounts">Accounts</a><a href="#questions">Questions</a></nav>
+    <a class="button button-small" href="#get">Download</a>
   </header>
 
-  <section class="win-hero wrap" aria-labelledby="hero-title">
-    <div class="win-hero-text">
+  <!-- The headline across the page, then the words beside the window -->
+  <section class="hero wrap" aria-labelledby="hero-title">
+    <div class="hero-text">
       <h1 id="hero-title" class="h1" data-reveal>Paste a link.<br> Roll.</h1>
-      <p class="lede" data-reveal style="--i:1">Rush Heart saves public videos and audio to your drive, one link or a list of them, and keeps an eye on the disk while it works.</p>
-      <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/rush-heart-site/releases/latest/download/RushHeart.exe">Download for Windows</a><span class="soft">Free · 151 MB</span></p>
+      <div class="hero-side">
+        <p class="lede" data-reveal style="--i:1">Rush Heart saves videos and audio to your drive, one link or a list of them, and keeps an eye on the disk while it works.</p>
+        <p class="actions" data-reveal style="--i:2"><a class="button" href="https://github.com/inigo-code/rush-heart-site/releases/latest/download/RushHeart.exe">Download for Windows</a><a class="link" href="https://github.com/inigo-code/rush-heart-site/releases">or see every release</a></p>
+        <ul class="facts" data-reveal style="--i:3"><li>Free, no ads</li><li>Sign in from inside the app</li><li>Files stay on your computer</li></ul>
+      </div>
     </div>
-    <figure class="window" data-reveal style="--i:2"><img src="assets/window.webp" width="1860" height="1200" alt="The Rush Heart history: finished downloads as cards, each with its picture, resolution and size."></figure>
+    <figure class="hero-media"><div class="window" data-reveal style="--i:2"><img src="assets/rushes_history.webp" width="1240" height="800" alt="The Rush Heart history: finished downloads as cards, each with its picture, resolution and size."></div></figure>
   </section>
 
+  <!-- Three things it does, one picture each -->
   <section id="features" class="section wrap" aria-labelledby="features-title">
-    <div class="head"><h2 id="features-title" class="h2" data-reveal>What it does</h2></div>
-    <dl class="more" data-reveal><div data-reveal style="--i:0"><dt>Video or audio</dt><dd>Pick the quality, or take only the sound in the format you prefer, tagged with its title and cover.</dd></div><div data-reveal style="--i:1"><dt>A list at once</dt><dd>Paste up to 50 links and Rush Heart works through them in a queue, with progress, speed and time left for each.</dd></div><div data-reveal style="--i:2"><dt>Watches your disk</dt><dd>Set a free-space floor and a size or time limit. Rush Heart pauses the queue before a drive fills up.</dd></div><div data-reveal style="--i:3"><dt>Schedule it</dt><dd>Start a download at a set time, once or every day, and stop it after a set length.</dd></div></dl>
+    <div class="head">
+      <h2 id="features-title" class="h2" data-reveal>Made for long queues</h2>
+      <p data-reveal style="--i:1">Paste one link or fifty. Rush Heart works through them and tells you how each one is going.</p>
+    </div>
+    <div class="rows">
+      <article class="row" aria-labelledby="f1">
+        <div class="row-text">
+          <h3 id="f1" class="h3" data-reveal>Video or audio</h3>
+          <p data-reveal style="--i:1">Pick the quality, or take only the sound in the format you prefer, tagged with its title and cover.</p>
+          <ul class="ticks" data-reveal style="--i:2"><li>Up to the best the site offers</li><li>MP3, FLAC, M4A, Opus or WAV</li><li>Playlists and subtitles</li></ul>
+        </div>
+        <figure class="row-media"><div class="window" data-reveal><img src="assets/rushes_queue.webp" width="1240" height="800" alt="Rush Heart’s Downloading page with a link box and quality choices." loading="lazy"></div></figure>
+      </article>
+
+      <article class="row" aria-labelledby="f2">
+        <div class="row-text">
+          <h3 id="f2" class="h3" data-reveal>A list at once</h3>
+          <p data-reveal style="--i:1">Paste up to 50 links. Rush Heart works through them in a queue, with progress, speed and time left for each.</p>
+          <ul class="ticks" data-reveal style="--i:2"><li>Start at a set time, once or daily</li><li>Stop after a set length</li><li>Show any file in its folder</li></ul>
+        </div>
+        <figure class="row-media"><div class="window" data-reveal><img src="assets/rushes_history.webp" width="1240" height="800" alt="Finished downloads as cards with pictures, resolution and size." loading="lazy"></div></figure>
+      </article>
+
+      <article class="row" aria-labelledby="f3">
+        <div class="row-text">
+          <h3 id="f3" class="h3" data-reveal>Sign in, right here</h3>
+          <p data-reveal style="--i:1">Some videos only play for signed-in people. Sign in from Settings and Rush Heart uses your account for that site.</p>
+          <ul class="ticks" data-reveal style="--i:2"><li>The site’s own page opens in a window</li><li>A failed video offers Sign in, then retries by itself</li><li>Takes a video’s own password too</li></ul>
+        </div>
+        <figure class="row-media"><div class="window" data-reveal><img src="assets/rushes_accounts.webp" width="1240" height="800" alt="The Accounts list in Rush Heart’s settings, with sites to sign in to." loading="lazy"></div></figure>
+      </article>
+    </div>
   </section>
 
-  <section id="download" class="section wrap" aria-labelledby="get-title">
-    <div class="get" data-reveal>
+  <!-- Accounts, as a plain list -->
+  <section id="accounts" class="section wrap" aria-labelledby="accounts-title">
+    <div class="import">
       <div class="head">
-        <h2 id="get-title" class="h2">Get Rush Heart</h2>
-        <p>One portable file. No installer and no account.</p>
+        <h2 id="accounts-title" class="h2" data-reveal>Sites that know your account</h2>
+        <p data-reveal style="--i:1">Sign in once under Settings, Accounts. The site’s own page opens in a window, so your password goes to the site and not to this app.</p>
+      </div>
+      <div data-reveal style="--i:1">
+        <ul class="sources"><li><strong>YouTube</strong><span>Age-checked videos</span></li><li><strong>Instagram</strong><span>Sign in here</span></li><li><strong>X (Twitter)</strong><span>Sign in here</span></li><li><strong>Facebook</strong><span>Sign in here</span></li><li><strong>TikTok</strong><span>Sign in here</span></li><li><strong>Twitch</strong><span>Sign in here</span></li><li><strong>Reddit</strong><span>Sign in here</span></li><li><strong>Vimeo</strong><span>Sign in here</span></li><li><strong>SoundCloud</strong><span>Sign in here</span></li><li><strong>Bilibili</strong><span>Sign in here</span></li><li><strong>Niconico</strong><span>Sign in here</span></li><li><strong>Patreon</strong><span>Sign in here</span></li></ul>
+        <p class="import-after">Another site takes any address, and a video with its own password takes it from Settings.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- The smaller things, as a plain list -->
+  <section class="section wrap" aria-labelledby="more-title">
+    <div class="head"><h2 id="more-title" class="h2" data-reveal>And the small things</h2></div>
+    <dl class="more" data-reveal style="--i:1"><div><dt>Watches your disk</dt><dd>Set a free-space floor and a size or time limit. The queue pauses before a drive fills up.</dd></div><div><dt>Keeps yt-dlp current</dt><dd>It checks for updates and asks before it installs anything.</dd></div><div><dt>Everything inside</dt><dd>FFmpeg and yt-dlp are in the one file, which is why it’s a larger download.</dd></div><div><dt>Live streams</dt><dd>Save a live stream as it plays, and stop when you like.</dd></div><div><dt>History</dt><dd>Everything you saved, with its picture. Search it, or show the file.</dd></div><div><dt>Recycle Bin</dt><dd>Remove a video from the list, and send its file to the Recycle Bin if you want to.</dd></div></dl>
+  </section>
+
+  <!-- Get it -->
+  <section id="get" class="section wrap" aria-labelledby="get-title">
+    <div class="get">
+      <div class="head">
+        <h2 id="get-title" class="h2" data-reveal>Get Rush Heart</h2>
+        <p data-reveal style="--i:1">Free for Windows 10 and 11. One portable file, with nothing to install. Paste a link and hit Roll.</p>
       </div>
       <div class="ways">
-        <a class="way way-main" href="https://github.com/inigo-code/rush-heart-site/releases/latest/download/RushHeart.exe"><img src="assets/rush-heart.svg" width="48" height="48" alt=""><span><strong>Download RushHeart.exe</strong><span>Version 1.7.2 · 151 MB</span></span><span class="go">Download</span></a>
-        <a class="way" href="https://github.com/inigo-code/rush-heart-site/releases"><img src="assets/heart-apps.svg" width="48" height="48" alt=""><span><strong>All releases</strong><span>Notes and checksums on GitHub</span></span><span class="go">Open</span></a>
-        <div class="notes">
-          <p><strong>Windows 10 or 11</strong>64-bit, with the WebView2 runtime that Windows 11 already includes.</p>
+        <a class="way way-main" href="https://github.com/inigo-code/rush-heart-site/releases/latest/download/RushHeart.exe" data-reveal><img src="assets/rush-heart.svg" width="48" height="48" alt=""><span><strong>Download RushHeart.exe</strong><span>Version 1.8.0 · 151 MB</span></span><span class="go">Download</span></a>
+        <a class="way" href="https://github.com/inigo-code/rush-heart-site/releases" data-reveal style="--i:1"><span class="way-mark" aria-hidden="true">GH</span><span><strong>Every release on GitHub</strong><span>With notes and checksums</span></span><span class="go">Open</span></a>
+        <div class="notes" data-reveal style="--i:2">
           <p><strong>Windows may warn you</strong>The app isn’t code-signed, so SmartScreen can show “Windows protected your PC”. Choose More info, then Run anyway. Only do that for a file from this page.</p>
           <p><strong>The first open is slower</strong>It unpacks itself, which can take up to half a minute. It keeps its files in a folder beside the exe.</p>
         </div>
@@ -62,16 +117,23 @@
     </div>
   </section>
 
-  <section id="questions" class="section wrap" aria-labelledby="faq-title">
-    <div class="faq">
-      <div class="head"><h2 id="faq-title" class="h2" data-reveal>Questions</h2></div>
-      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>What does it work with?</summary><p>Public videos on the sites yt-dlp supports, plus direct HLS streams. Rush Heart keeps yt-dlp up to date and asks before it installs anything.</p></details><details name="faq"><summary>What won’t it do?</summary><p>It won’t sign in for you or get past paywalls, tokens or DRM, and streaming services like Netflix and Prime are blocked. It doesn’t record live cam rooms.</p></details><details name="faq"><summary>Am I allowed to save this?</summary><p>That depends on the video and where you live. Only save what you have the right to save, and don’t record people without their permission. Rush Heart asks you to agree to this, and to confirm you’re 18 or over, when it first opens.</p></details><details name="faq"><summary>Does it need anything else installed?</summary><p>No. FFmpeg and yt-dlp are inside the one file, which is why it’s a larger download.</p></details><details name="faq"><summary>Where do the files go?</summary><p>Into a captures folder beside the app, or any folder you choose in Settings.</p></details></div>
+  <!-- A note from the maker -->
+  <section class="section wrap" aria-labelledby="note-title">
+    <div class="note">
+      <h2 id="note-title" class="h2" data-reveal>A note from Inigo</h2>
+      <div data-reveal style="--i:1">
+        <div class="copy"><p>Your videos stay on your computer, and your sign-ins stay there too. There are no ads and nothing to buy, and there won’t be. If a site stops working or something’s broken, write to me. I read everything.</p></div>
+        <p class="actions"><a class="button button-tone" href="mailto:inigo@tosstheworld.org?subject=Rush%20Heart">Write to Inigo</a></p>
+      </div>
     </div>
   </section>
 
-  <section class="section wrap privacy" aria-labelledby="privacy-title">
-    <h2 id="privacy-title" class="h3" data-reveal>Privacy</h2>
-    <p class="soft" data-reveal style="--i:1">Rush Heart has no accounts, no analytics and no ads. Your files and settings stay on your computer. It only connects to the internet for the work you ask it to do and to check for updates to its tools. This website uses Google Fonts and GitHub Pages, and sets no cookies of its own.</p>
+  <!-- Questions -->
+  <section id="questions" class="section wrap" aria-labelledby="faq-title">
+    <div class="faq">
+      <div class="head"><h2 id="faq-title" class="h2" data-reveal>Questions</h2></div>
+      <div class="faq-list" data-reveal style="--i:1"><details name="faq" open><summary>Is it free?</summary><p>Yes, completely: no ads, no subscriptions and no paid extras.</p></details><details name="faq"><summary>What does it work with?</summary><p>Videos on the sites yt-dlp supports, plus direct HLS streams. Rush Heart keeps yt-dlp up to date and asks before it installs anything.</p></details><details name="faq"><summary>Is my password safe?</summary><p>You type it into the site’s own page, in a window, and Rush Heart never sees it. It keeps only the session the site gives back, on your computer. Sign out deletes it.</p></details><details name="faq"><summary>What if a site won’t let me sign in here?</summary><p>Some sites refuse sign-ins from app windows. Sign in with your own browser and pick it in Settings, or use a cookies.txt file.</p></details><details name="faq"><summary>What won’t it do?</summary><p>It only sees what your own account can see. It won’t get past paywalls, tokens or DRM, and streaming services like Netflix and Prime are blocked. It doesn’t record live cam rooms.</p></details><details name="faq"><summary>Am I allowed to save this?</summary><p>That depends on the video and where you live. Only save what you have the right to save, and don’t record people without their permission. Rush Heart asks you to agree to this, and to confirm you’re 18 or over, when it first opens.</p></details><details name="faq"><summary>Does it need anything else installed?</summary><p>No. FFmpeg and yt-dlp are inside the one file.</p></details><details name="faq"><summary>Where do the files go?</summary><p>Into a captures folder beside the app, or any folder you choose in Settings.</p></details></div>
+    </div>
   </section>
 </main>
 
@@ -79,7 +141,7 @@
   <div class="wrap">
     <p class="foot-name" aria-hidden="true">Rush Heart</p>
     <div class="foot-cols">
-      <nav aria-label="Rush Heart"><h2>Rush Heart</h2><a href="https://github.com/inigo-code/rush-heart-site/releases/latest/download/RushHeart.exe">Download</a><a href="https://github.com/inigo-code/rush-heart-site/releases">All releases</a></nav>
+      <nav aria-label="Rush Heart"><h2>Rush Heart</h2><a href="https://github.com/inigo-code/rush-heart-site/releases/latest/download/RushHeart.exe">Download</a><a href="https://github.com/inigo-code/rush-heart-site/releases">All releases</a><a href="privacy.html">Privacy</a></nav>
       <nav aria-label="For Windows"><h2>For Windows</h2><a class="to-app" href="https://inigo-code.github.io/frame-heart-site/"><img src="assets/frame-heart.svg" width="24" height="24" alt="">Frame Heart</a><a class="to-app" href="https://inigo-code.github.io/still-heart-site/"><img src="assets/still-heart.svg" width="24" height="24" alt="">Still Heart</a></nav>
       <nav aria-label="For Android"><h2>For Android</h2><a class="to-app" href="https://inigo-code.github.io/prompt-heart-site/"><img src="assets/prompt-heart.png" width="24" height="24" alt="">Prompt Heart</a><a class="to-app" href="https://inigo-code.github.io/watch-heart-site/"><img src="assets/watch-heart.png" width="24" height="24" alt="">Watch Heart</a></nav>
       <nav aria-label="Heart Apps"><h2>Heart Apps</h2><a href="mailto:inigo@tosstheworld.org?subject=Rush%20Heart">inigo@tosstheworld.org</a><a class="to-home" href="https://inigo-code.github.io/"><img src="assets/heart-apps.svg" width="22" height="22" alt="">All Heart Apps</a></nav>
